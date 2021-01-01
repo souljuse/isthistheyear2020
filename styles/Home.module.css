@@ -65,7 +65,6 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-weight: bold;
   transition: all color 0.15s ease;
 }
 

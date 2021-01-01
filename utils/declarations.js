@@ -11,7 +11,7 @@ const declarations = [
   "No!",
   "No! No! No! No! NO! Mamma mia let me go",
   "This question again. You all want the same thing from me",
-  "Ah! You scared me there for a second. But, no it is not the year 2020",
+  "Ah! You scared me there for a second. But no, it is not the year 2020",
   "It seems that 2020 is in the past",
   "2020, just a memory",
   "It is gone baby!",
