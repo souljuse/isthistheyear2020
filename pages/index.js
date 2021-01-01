@@ -5,6 +5,8 @@ import declarations from "../utils/declarations";
 
 export default function Home() {
   const [declaration, setDeclaration] = useState(declarations[0]);
+  const [loading, setLoading] = useState(false);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -15,14 +17,19 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>{declaration}</h1>
         <button
-          onClick={() =>
-            setDeclaration(
-              declarations[Math.floor(Math.random() * declarations.length)]
-            )
-          }
-          className={styles.card}
+          onClick={() => {
+            setLoading(true);
+
+            setTimeout(() => {
+              setLoading(false);
+              setDeclaration(
+                declarations[Math.floor(Math.random() * declarations.length)]
+              );
+            }, 2500);
+          }}
+          className={styles.button}
         >
-          Check again
+          {loading ? "Checking..." : "Check again"}
         </button>
       </main>
 
